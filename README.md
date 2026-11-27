@@ -1,6 +1,8 @@
 # Copper Charcoal Theme for Zed
 
-A meticulously crafted dark theme for the Zed editor, designed to balance deep charcoal surface tones with warm copper accents, glowing amber highlights, and crisp visual hierarchy.
+A meticulously crafted dark theme for the Zed editor, designed to balance deep charcoal surface tones with warm copper accents, a touch of verdigris patina, and crisp visual hierarchy.
+
+![TypeScript preview](./assets/preview-typescript.png)
 
 ---
 
@@ -9,31 +11,66 @@ A meticulously crafted dark theme for the Zed editor, designed to balance deep c
 ### 1. Deep Charcoal Canvas & Panel Hierarchy
 
 - **Rich Charcoal Canvas (`#1a1a1a`):** The primary editor background uses a deep, ultra-dark charcoal surface that keeps contrast high without causing visual fatigue during extended coding sessions.
-- **Distinct Frame Layers (`#141414`):** The tab bar, title bar, and status bar use a darker, recessed tone to clearly frame your workspace.
+- **Distinct Frame Layers (`#141414` – `#171717`):** The tab bar, title bar, status bar, and side panels use darker, recessed tones to clearly frame your workspace.
 - **UI Elements & Surface Depth (`#222222` – `#404040`):** Menus, popups, and elevated panels maintain step-by-step depth cues for seamless navigation.
+- **Copper Selection (`#3a2a20`):** Selected tabs, list items, and buttons use a dark copper tint instead of the default blue.
 
 ### 2. Tailored Syntax Highlighting
 
-- **Keywords & Tags (`#fb4934`):** Expressive coral-red with semibold emphasis anchors control flow and markup layout.
-- **Functions & Methods (`#64b5f6`):** Crisp sky-blue with semibold weight guarantees high visibility when skimming through complex logic.
-- **Types, Enums, Properties & Attributes (`#ffb74d`):** Warm golden-amber highlights object properties, HTML/JSX attributes, and class declarations.
-- **Strings & Links (`#81c784`):** Soft sage-green offers a calm, balanced contrast for string literals, URIs, and regex expressions.
-- **Numbers, Booleans & Constants (`#ff8a65`):** Bright peach-coral brings scalar values, booleans, and numeric constants into immediate focus.
-- **Operators & Copper Accents (`#d97749` & `#e5885c`):** Rich burnt-copper hues group mathematical logic, brackets, delimiters, and embedded expressions.
-- **Comments & Predictive Text (`#666666` – `#888888`):** Muted charcoal-grey with italic styling reduces cognitive clutter for non-executable metadata.
+Every token category gets its own hue, weight, or style, so code never blends into a single warm blur.
+
+| Category | Color | Style |
+|---|---|---|
+| Keywords & tags | `#e86a4a` rust copper | semibold italic |
+| Imports / exports | `#d4896a` muted copper | italic |
+| Functions | `#56c2e6` sky azure | semibold |
+| Methods | `#9ed8ee` light azure | — |
+| Built-in functions | `#56c2e6` sky azure | italic |
+| Variables | `#e6dccf` warm white | — |
+| Parameters | `#e8cfb0` cream | italic |
+| `self` / `this` | `#e07a5f` terracotta | italic |
+| Properties & fields | `#d6b97a` brass | — |
+| Constants | `#e8a0a0` rose gold | semibold |
+| Numbers & booleans | `#ff8a65` peach coral | — |
+| Types, enums, constructors | `#ffb74d` golden amber | — |
+| Built-in types | `#e6a23c` dark amber | italic |
+| Namespaces & modules | `#7fb5a8` verdigris patina | — |
+| Attributes & decorators | `#d4a373` bronze | italic |
+| Strings | `#81c784` sage green | — |
+| Regex & escape sequences | `#7fb5a8` verdigris patina | — |
+| Operators & brackets | `#d97749` burnt copper | — |
+| Punctuation | `#a39a91` warm grey | — |
+| Comments | `#6e665f` warm charcoal grey | italic |
+
+All colors meet WCAG AA contrast (≥ 4.5:1) against the editor background, except comments, which are intentionally subdued.
 
 ### 3. Integrated Diagnostics & VCS Statuses
 
-- **Diagnostics:** Errors are flagged in vibrant rose (`#f06292`), warnings glowing in warm copper (`#e5885c`), and info notifications highlighted in clean sky-blue (`#64b5f6`).
-- **Git Status:** Added files glow in sage-green (`#81c784`), modified lines highlight in copper (`#e5885c`), and deletions pull attention with distinct rose (`#f06292`).
+- **Diagnostics:** Errors are flagged in vibrant rose (`#f06292`), warnings in warm copper (`#e5885c`), and info notifications in verdigris patina (`#7fb5a8`), each with a soft tinted background and border.
+- **Git Status:** Added files glow in sage green (`#81c784`), modified in copper (`#e5885c`), renamed in patina (`#7fb5a8`), conflicts in amber (`#ffb74d`), and deletions in rose (`#f06292`). Gutter diff markers follow the same palette.
+- **Inline Blame & Hints (`#6b6b6b`):** Subdued grey keeps inline git blame and hints readable but out of the way.
 
 ### 4. Active Navigation Cues
 
-- **Active Line Focus:** The current editor line number glows in glowing copper (`#e5885c`) against a soft overlay (`#242424`).
-- **Focused Borders:** Active split panes, focus rings, and selected state accents stand out with a signature copper border (`#e5885c`).
+- **Copper Cursor & Selection (`#e5885c`):** The cursor glows copper, and text selection uses a translucent copper wash.
+- **Active Line Focus:** The current line number glows copper (`#e5885c`) against a soft overlay (`#242424`).
+- **Focused Borders:** Active split panes, panels, and focus rings stand out with a signature copper border (`#e5885c`).
+- **Search & References:** Search matches use a translucent amber highlight; symbol references use a subtle copper tint.
 
-### 5. Theme Preview
+### 5. Terminal
 
-![Code example 1](./assets/SCR-20261006-pwoq.png)
+A full 16-color ANSI palette tuned to the theme: rose, sage, amber, sky, orchid, and cyan, with bright and dim variants.
 
-![Code example 2](./assets/SCR-20261006-pxdd.png)
+### 6. Theme Preview
+
+**TypeScript**
+
+![TypeScript preview](./assets/preview-typescript.png)
+
+**Rust**
+
+![Rust preview](./assets/preview-rust.png)
+
+**Python**
+
+![Python preview](./assets/preview-python.png)
